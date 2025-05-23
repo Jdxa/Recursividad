@@ -7,6 +7,7 @@ public class tpRe {
         int [] arr = {1,2,3,4};
         impArr(arr);
         System.out.println("hola");
+        leer.close();
     }
     public static String imprimir(int num){
         String st = "";
