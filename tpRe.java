@@ -6,7 +6,8 @@ public class tpRe {
         Scanner leer = new Scanner(System.in);
         int [] arr = {1,2,3,4};
         impArr(arr);
-        
+        System.out.println("hola");
+        leer.close();
     }
     public static String imprimir(int num){
         String st = "";
