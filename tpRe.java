@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class tpRe {
+    //Este no es ningun punto es un test para github
     public static void main(String[] args) {
         System.out.println(imprimir(4));
         Scanner leer = new Scanner(System.in);
