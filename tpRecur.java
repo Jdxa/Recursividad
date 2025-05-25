@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class tpRecur {
     public static void main(String[] args) {
-        System.out.println("Num tiene: "+digMultTres(100)+ " digitos multiplos a tres");
-
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println("Num tiene: "+digMultTres(num)+ " digitos multiplos a tres");
+        sc.close();
     }
     public static int digMultTres(int num){
         //Retorna cuantos digitos multiplos de tres tiene num
