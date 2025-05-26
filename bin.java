@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class bin {
     public static void main(String[] args) {
+        //Punto sobre binario
         Scanner leer = new Scanner(System.in);
         System.out.print("Ingrese un numero y te lo paso a bin: ");
         int num = leer.nextInt();
