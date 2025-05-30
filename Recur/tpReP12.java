@@ -1,3 +1,4 @@
+package Recur;
 public class tpReP12 {
     public static void main(String[] args) {
         //Buscar un caracter en un arreglo

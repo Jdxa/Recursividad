@@ -1,3 +1,4 @@
+package Recur;
 public class tpReP10 {
     public static void main(String[] args) {
         System.out.println(hastaPun("hola.comostas", 0));

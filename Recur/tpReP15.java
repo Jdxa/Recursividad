@@ -1,3 +1,4 @@
+package Recur;
 public class tpReP15 {
     public static void main(String[] args) {
         System.out.println(cantVocales("hola", 0));

@@ -1,3 +1,4 @@
+package Recur;
 import java.util.Scanner;
 
 public class tpReP8 {
