@@ -1,6 +1,6 @@
 package Ordenamiento;
 
-public class tpOrd4_5 {
+public class tpOrd4_6 {
     public static void main(String[] args) {
         int [] arr = {89,45,68,90,29,34,17};
         imprimirArr(arr);
