@@ -1,13 +1,49 @@
 package Ordenamiento;
 
-public class tpOrd4 {
+public class tpOrd4_5 {
     public static void main(String[] args) {
         int [] arr = {89,45,68,90,29,34,17};
         imprimirArr(arr);
-        metBurb(arr);
+        metBurbMej(arr);
         imprimirArr(arr);
-        metBurbReves(arr);
+        metBurbMejReves(arr);
         imprimirArr(arr);
+    }
+    public static void metBurbMej(int []arr){
+        // Crear bandera de corte
+        int i, j, aux;
+        boolean ordenado = false;
+        i = 0;
+        while (i < arr.length -1 && !ordenado ) {
+            ordenado = true;
+            for (j= 0; j< arr.length - i -1; j++){
+                if (arr[j]> arr[j+1]) {
+                    ordenado = false;
+                    aux =  arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = aux;
+                }
+            }
+            i++;
+        }
+    }
+    public static void metBurbMejReves(int []arr){
+        // Crear bandera de corte
+        int i, j, aux;
+        boolean ordenado = false;
+        i = 0;
+        while (i < arr.length -1 && !ordenado ) {
+            ordenado = true;
+            for (j= 0; j< arr.length - i -1; j++){
+                if (arr[j] < arr[j+1]) {
+                    ordenado = false;
+                    aux =  arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = aux;
+                }
+            }
+            i++;
+        }
     }
     public static void metBurb(int [] arr){
         int i,j,aux,corte;
