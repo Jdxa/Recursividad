@@ -13,16 +13,16 @@ public class tpOrdP5 {
     public static void insercion(int[] a, int n) {
         int i, j, aux;
 
-        for (i = 1; i < n; i++) {
-            j = i;
-            aux = a[j];  // Guardamos el valor actual
+        for (i = 1; i < n; i++) {                                          //
+            j = i;                                                         //asignacion: 1
+            aux = a[j];  // Guardamos el valor actual                      //asignacion + acceso: 2
             // Desplazamos hacia la derecha los valores mayores a 'aux'
-            while (j > 0 && a[j - 1] > aux) {
-                a[j] = a[j - 1];
-                j--;
+            while (j > 0 && a[j - 1] > aux) {                           //cond: 4
+                a[j] = a[j - 1];                                        //3(acceso al arreglo*2 + asignacion)
+                j--;                                                    // 2 incremento
             }
 
-            a[j] = aux;  // Insertamos en la posición correcta
+            a[j] = aux;  // Insertamos en la posición correcta          //acceso y asignacion: 2
         }
     }
     public static void insercionReves(int[] a, int n) {

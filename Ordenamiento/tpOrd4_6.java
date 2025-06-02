@@ -29,20 +29,21 @@ public class tpOrd4_6 {
     }
     public static void metBurbMejReves(int []arr){
         // Crear bandera de corte
-        int i, j, aux;
-        boolean ordenado = false;
-        i = 0;
-        while (i < arr.length -1 && !ordenado ) {
-            ordenado = true;
-            for (j= 0; j< arr.length - i -1; j++){
+        int i, j, aux;                                  //
+        boolean ordenado = false;                   //1
+        i = 0;                                      //1
+        while (i < arr.length -1 && !ordenado ) {   //4
+            ordenado = true;                       //1
+            for (j= 0; j< arr.length - i - 1; j++){
                 if (arr[j] < arr[j+1]) {
-                    ordenado = false;
-                    aux =  arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = aux;
+                    ordenado = false;           //1
+                    //Intercambio elementos
+                    aux =  arr[j];              //2
+                    arr[j] = arr[j+1];          //4?
+                    arr[j+1] = aux;             //3
                 }
             }
-            i++;
+            i++;                                //2
         }
     }
     public static void metBurb(int [] arr){
