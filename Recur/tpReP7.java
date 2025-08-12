@@ -1,3 +1,4 @@
+package Recur;
 public class tpReP7 {
     public static void main(String[] args) {
         int [][] mat = {{10,1,2},{30,20,4},{5,6,30}};
